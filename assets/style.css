@@ -1,0 +1,362 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ /* Background (body) */
+.container {
+    background-color: hsl(218, 23%, 16%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Conteúdo principal */
+.content {
+    background-color: hsl(217, 19%, 24%);
+    display: flex;
+    width: 95%;
+    height: 95vh;
+    box-shadow: 3px 3px 2.5px;
+    border-radius: 0.8rem;
+    justify-content: space-between;
+}
+
+/* Barra lateral onde contém o perfil e menu */
+.sidebar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 100%;
+    border-right: 1px solid hsl(150, 100%, 66%);
+    border-radius: 0.8rem;
+}
+
+
+/* Div em que fica o nome e imagem do usuário. */
+.profile {
+    padding: 0rem 2rem 0rem 1rem;
+    color: hsl(150, 100%, 66%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.3rem;
+    display: flex;
+    height: 200px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.profileImage {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(150, 100%, 66%);
+    max-width: 225px;
+    max-height: 250px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 50px;
+}
+
+.menuItem {
+    font-family: 'Manrope', sans-serif;
+    color:azure;
+    border: 1px hsl(150, 100%, 66%) transparent;
+    border-radius: 0.8rem;
+    transition: border 0.3s ease-in;
+    height: 80px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.menuItem:hover {
+    border: 1px hsl(150, 100%, 66%) solid;
+}
+
+
+/* Sessão onde ficará os conteúdos selecionados no menu lateral */
+.article{
+    width: 100%;
+    color: hsl(193, 38%, 86%);
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    margin-left: 0;
+}
+
+.article #title {
+    padding-top: 30px;
+    border-bottom: 1px solid hsl(150, 100%, 66%);
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+.article-content {
+    list-style: none;
+    /* position: relative; */
+    display: flex;
+    overflow-y: auto;
+    justify-content: center;
+    height: 80%
+}
+
+.article-content ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.article-content li {
+    width: 100%
+}
+
+.article-content li.subLi {
+    width: 80%; 
+    text-align: start;
+}
+
+p {
+    display: flex;
+}
+
+span.titulo {
+    font-weight: bold;
+    display: flex;
+    width: 100px;
+    color: hsl(150, 100%, 66%); /* Cor diferente para destacar os títulos */ 
+}
+
+span.valor {
+    font-size: 16px;
+    color: hsl(193, 38%, 86%);
+}
+
+
+/* Ajustes necessários para a sessão de formação */
+.article-content#formacao-content ul.subUl {
+    margin: 0;
+    width: auto;
+    position: relative;
+    left: 35%;
+    top: -20px;
+    display: flex;
+    
+}
+
+.article-content#formacao-content span.titulo {
+    padding-right: 30px;
+}
+
+.article-content#formacao-content li.subLi span.valor {
+    text-decoration: underline hsl(150, 100%, 66%);
+}
+
+.article-content#formacao-content li.subLi span.valor:hover {
+    transition: 0.6s;
+    color: hsl(150, 100%, 66%);
+    text-decoration: underline hsl(212, 100%, 50%);
+}
+
+
+/* Ajustes necessários para a sessão de portifolio */
+.article-content .project {
+    background-color: #0d1117ac;
+    border: 1px solid #30363d;
+    color: #FFF;
+    height: 80px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    border-radius: 6px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: underline hsl(150, 100%, 66%);
+    color: #8b949e;
+}
+
+a:hover {
+    transition: 0.6s;
+    color: hsl(150, 100%, 66%);
+    text-decoration: underline hsl(212, 100%, 50%);
+}
+
+
+.article-content .project div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-content .project div .date-create {
+    color: #8b949e;
+    border: 1px solid #8b949e;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.article-content .project div .title {
+    color: #47a6f0;
+}
+
+.article-content .project .language {
+    margin-right: 5px;
+}
+
+.article-content .project .language .circle {
+
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border: 1px solid #30363d;
+    border-radius: 50%;
+}
+
+
+/* Ajustes necessários para a sessão de contatos */
+.article-content#contato-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+        place-self: center;
+        margin-top: 20px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 10%;
+        width: 500px;
+        max-width: auto;
+        min-height: 400px;
+        max-height: 100%;
+        background-color: #292828b6;
+        border-radius: 1rem;
+    }
+
+#form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px;
+}
+
+input {
+    height: 25px;
+}
+    
+#submit {
+    background-color: hsl(193, 77%, 93%);
+    border-radius: 8px;
+    color: hsl(195, 3%, 24%);
+    display: block;
+    margin: 1rem auto;
+    padding: 0.4rem 1rem;
+    font-size: 15px;
+    width: fit-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    }
+
+#submit:hover {
+    transition: 1s;
+    cursor: pointer;
+    background-color: rgb(38, 244, 141);
+    transform: scale(1.1);
+    color: hsl(228, 45%, 44%);
+}
+
+#social-medias div{
+    position: relative;
+    padding-top: 8px;
+}
+
+#social-medias a {
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+
+/* Rodapé | Assinatura */
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-family: 'Manrope', sans-serif;
+    color: hsl(193, 38%, 86%);
+    font-size: 11px; text-align: center;
+} .attribution a { 
+        padding-left: 4px;
+        padding-right: 4px;
+        border-radius: 5px; 
+        background-color: hsla(150, 100%, 66%, 0.8); 
+        color: hsl(228, 45%, 44%); 
+    }
+
+
+/* Ajuste do scrollbar */
+/* Para navegadores WebKit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(150, 100%, 66%); /* Cor do indicador da barra de rolagem */
+    border-radius: 6px; /* Cantos arredondados do indicador */
+}
+
+::-webkit-scrollbar-track {
+    background-color: hsl(217, 19%, 24%); /* Cor da área de fundo da barra de rolagem */
+}
+
+/* Para navegadores Firefox */
+::-moz-scrollbar {
+    width: 8px;
+}
+
+::-moz-scrollbar-thumb {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 6px;
+}
+
+::-moz-scrollbar-track {
+    background-color: hsl(217, 19%, 24%);
+}
+
+
+
+
+    @media(max-width:1600px) and (min-width:900px) {
+        .boxAdvice{
+            width: 500px;
+        }
+        #mobile{
+            display: none;
+        }
+        #desktop{
+            display: block;
+        }
+        .iconDice{
+            margin-left: 13.1rem;
+        }
+    }
