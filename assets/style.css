@@ -397,6 +397,10 @@ input {
         padding: 0;
     }
 
+    .article-content .project div .title {
+        font-size: 13px;
+    }
+
     .article-content .project .language .circle{
         width: 8px;
         height: 8px;
