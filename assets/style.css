@@ -300,7 +300,7 @@ input {
 
 /* Rodapé | Assinatura */
 .attribution {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 50%;
     font-family: 'Manrope', sans-serif;
