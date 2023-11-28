@@ -1,5 +1,6 @@
 // Variáveis de seleção dos elementos(botões).
 const sobreMim = document.getElementById("sobre-mim");
+const profileImage = document.querySelector(".profile")
 const formacao = document.getElementById("formacao");
 const portifolio = document.getElementById("portifolio");
 const contato = document.getElementById("contato");
